@@ -163,9 +163,15 @@ h1{font-size:2rem;line-height:1.15;margin:.2rem 0 .8rem}
   padding:1rem;
 }
 
-.project{padding:0; overflow:hidden}
+.project{
+  padding: 1rem;
+  overflow: hidden;
+}
 .project img{aspect-ratio: 16/9; object-fit:cover}
 .card-body{padding:1rem}
+.project img{
+  border-radius: 12px;
+}
 
 .tags{
   list-style:none;
@@ -274,3 +280,31 @@ textarea{resize:vertical}
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+/* Space project media away from the card border */
+.project > img{
+  margin: 1rem 1rem 0;
+  width: calc(100% - 2rem);
+  border-radius: 12px;
+}
+
+/* Wrapper for embedded media (iframe/video) */
+.project-media{
+  padding: 1rem 1rem 0;
+}
+
+/* Shared embed styling */
+.project-media .embed{
+  width: 100%;
+  height: 420px;
+  border: 0;
+  border-radius: 12px;
+  display: block;
+  background: #000;
+  box-shadow: var(--shadow);
+}
+
+@media (max-width: 799px){
+  .project-media .embed{
+    height: 320px;
+  }
+}
