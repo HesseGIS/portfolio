@@ -280,19 +280,16 @@ textarea{resize:vertical}
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* Space project media away from the card border */
 .project > img{
   margin: 1rem 1rem 0;
   width: calc(100% - 2rem);
   border-radius: 12px;
 }
 
-/* Wrapper for embedded media (iframe/video) */
 .project-media{
   padding: 1rem 1rem 0;
 }
 
-/* Shared embed styling */
 .project-media .embed{
   width: 100%;
   height: 420px;
